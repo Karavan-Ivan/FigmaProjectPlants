@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+header .header {
+  display: flex;
+  justify-content: center;
+  height: 52.742vh;
+}
+header .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 52.742vh;
+}
+header .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+header .col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+header .top_navbar {
+  width: 100vw;
+  max-height: 23.2vh;
+  background-color: #0C4B35;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .address_phone {
+  display: flex;
+  justify-content: space-around;
+}
+header .address_phone img {
+  margin-right: 5.3vw;
+  display: block;
+}
+header .language {
+  display: flex;
+  align-items: center;
+}
+header .address_phone, header .language {
+  padding: 8.438vh 5.333vw 6.329vh 5.333vw;
+}
+header .language a {
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  padding-right: 1.333vw;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 29.535vh;
+  max-height: 29.535vh;
+  padding: 0 4vw 0 4vw;
+  background-color: white;
+}
+header .call_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 29.333vw;
+}
+
+main .imagenone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+main .imagenone a img {
+  display: block;
+}
+main .container {
+  width: 100%;
+  padding: 0 4.133vw 0 3.866vw;
+}
+main .row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main .entry {
+  background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
+}
+main .firstline {
+  display: flex;
+  align-items: center;
+  padding-bottom: 4.219vh;
+}
+main .firstline li {
+  padding-left: 1.333vw;
+}
+main .firstline li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #212529;
+  line-height: 19px;
+}
+main .secondline {
+  padding-bottom: 6.329vh;
+}
+main .secondline span {
+  color: #00730C;
+}
+main .secondline a {
+  text-decoration: none;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #212529;
+}
+main .thirdline {
+  padding-bottom: 16.877vh;
+}
+main .thirdline a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #212529;
+  text-decoration: none;
+}
+main .buttonGetAQuate {
+  align-self: center;
+}
+main .buttonGetAQuate button {
+  background-color: #00730C;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 5.063vh 28vw 5.063vh 28vw;
+}/*# sourceMappingURL=style.css.map */

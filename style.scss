@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box
+}
+
+@import "./variables";
+header {
+    @import "./header";
+}
+main {
+    @import "./main";
+}
+
+

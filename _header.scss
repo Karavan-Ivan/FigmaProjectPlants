@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    justify-content: center;
+    height: 52.742vh;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 52.742vh;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.top_navbar {
+    width: 100vw;
+    max-height: 23.2vh;
+    background-color: #0C4B35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.address_phone {
+    display: flex;
+    justify-content: space-around;
+}
+.address_phone img {
+    margin-right: 5.3vw;
+    display: block;
+}
+.language {
+    display: flex;
+    align-items: center;
+}
+.address_phone, .language {
+    padding: 8.438vh 5.333vw 6.329vh 5.333vw;
+}
+.language a {
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding-right: 1.333vw;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 29.535vh;
+    max-height: 29.535vh;
+    padding: 0 4vw 0 4vw;
+    background-color: white;
+}
+.call_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 29.333vw;
+}
