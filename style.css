@@ -142,4 +142,104 @@ main .buttonGetAQuate button {
   font-size: 16px;
   line-height: 20px;
   padding: 5.063vh 28vw 5.063vh 28vw;
+}
+main .fourthline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 8.438vh;
+}
+main .fourthline li {
+  width: 29.333vw;
+}
+main .fourthline li a {
+  text-decoration: none;
+  color: #00730C;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+main .fourthline img {
+  padding-left: 3.2vw;
+  align-self: center;
+  display: block;
+}
+main .fifthline {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 17.721vh 0 14.767vh 0;
+}
+main .fifthline button {
+  border-radius: 32px;
+  background-color: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
+  border: none;
+  padding: 3.375vh 2.666vw 3.375vh 2.666vw;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: #212529;
+}
+main .fifthline button:first-child {
+  margin-right: 3.2vw;
+}
+main .fifthline span {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  padding-right: 2.133vw;
+  color: #212529;
+}
+main .services h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #212529;
+  text-align: center;
+  padding-top: 21.097vh;
+  padding-bottom: 6.329vh;
+}
+main .services h1 span {
+  color: #00730C;
+}
+main .services p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+  padding-bottom: 12.658vh;
+}
+main .service {
+  display: flex;
+  align-items: center;
+  background: red;
+  margin-bottom: 8.438vh;
+  padding: 8.438vh 5.333vw 8.438vh 5.333vw;
+}
+main .service:last-child {
+  margin: 0;
+}
+main .service li {
+  text-align: left;
+  text-decoration: none;
+  padding-left: 5.333vw;
+}
+main .service li a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212529;
+  text-decoration: none;
+}
+main .service li:nth-child(2) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+  padding-top: 4.219vh;
 }/*# sourceMappingURL=style.css.map */
