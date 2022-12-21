@@ -76,7 +76,7 @@ main .imagenone {
   align-items: center;
   width: 100%;
 }
-main .imagenone a img {
+main img {
   display: block;
 }
 main .container {
@@ -194,7 +194,7 @@ main .fifthline span {
   padding-right: 2.133vw;
   color: #212529;
 }
-main .services h1 {
+main h1 {
   font-weight: 700;
   font-size: 28px;
   line-height: 38px;
@@ -203,10 +203,10 @@ main .services h1 {
   padding-top: 21.097vh;
   padding-bottom: 6.329vh;
 }
-main .services h1 span {
+main h1 span {
   color: #00730C;
 }
-main .services p {
+main p {
   text-align: center;
   font-weight: 400;
   font-size: 14px;
@@ -242,4 +242,57 @@ main .service li:nth-child(2) {
   line-height: 22px;
   color: #676767;
   padding-top: 4.219vh;
+}
+main .picturesnone {
+  height: 500px;
+  background-color: gray;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+main .aboutcompany p {
+  padding-bottom: 16.877vh;
+  text-align: left;
+}
+main .servicesAboutCompany {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .serviceAboutCompany {
+  width: calc(50% - 2.666vw);
+  margin-bottom: 8.438vh;
+  padding: 6.329vh 4vw 6.329vh 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+main .serviceAboutCompany:nth-child(1), main .serviceAboutCompany:nth-child(3) {
+  margin-right: 5.333vw;
+}
+main .serviceAboutCompany li a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #212529;
+}
+main .serviceAboutCompany > a {
+  padding-bottom: 1.476vh;
+}
+main .discovermore {
+  margin-top: 4.219vh;
+  text-align: center;
+}
+main .discovermore button {
+  background-color: #00730C;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 5px;
+  border: none;
+  color: #FFFFFF;
+  padding: 4.219vh 8vw 4.219vh 8vw;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

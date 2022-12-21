@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
 }
-.imagenone a  img {
+img {
     display: block;
 }
 .container {
@@ -122,7 +122,7 @@
     padding-right: 2.133vw;
     color: #212529;
 }
-.services h1 {
+h1 {
     font-weight: 700;
     font-size: 28px;
     line-height: 38px;
@@ -131,10 +131,10 @@
     padding-top: 21.097vh;
     padding-bottom: 6.329vh;
 }
-.services h1 span {
+h1 span {
     color: #00730C;
 }
-.services p {
+p {
     text-align: center;
     font-weight: 400;
     font-size: 14px;
@@ -170,4 +170,57 @@
     line-height: 22px;
     color: #676767;
     padding-top: 4.219vh;
+}
+.picturesnone {
+    height: 500px;
+    background-color: gray;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.aboutcompany p {
+    padding-bottom: 16.877vh;
+    text-align: left;
+}
+.servicesAboutCompany {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.serviceAboutCompany {
+    width: calc(50% - 2.666vw);
+    margin-bottom: 8.438vh;
+    padding: 6.329vh 4vw 6.329vh 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+.serviceAboutCompany:nth-child(1), .serviceAboutCompany:nth-child(3) {
+    margin-right: 5.333vw;
+}
+.serviceAboutCompany li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #212529;
+}
+.serviceAboutCompany > a {
+    padding-bottom: 1.476vh;
+}
+.discovermore {
+    margin-top: 4.219vh;
+    text-align: center;
+}
+.discovermore button {
+    background-color: #00730C;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    padding: 4.219vh 8vw 4.219vh 8vw;
+    text-align: center;
 }
