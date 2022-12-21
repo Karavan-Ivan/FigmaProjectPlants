@@ -194,19 +194,19 @@ main .fifthline span {
   padding-right: 2.133vw;
   color: #212529;
 }
-main h1 {
+main .services h1 {
   font-weight: 700;
   font-size: 28px;
   line-height: 38px;
   color: #212529;
   text-align: center;
-  padding-top: 21.097vh;
-  padding-bottom: 6.329vh;
+  margin-top: 21.097vh;
+  margin-bottom: 6.329vh;
 }
 main h1 span {
   color: #00730C;
 }
-main p {
+main .services p {
   text-align: center;
   font-weight: 400;
   font-size: 14px;
@@ -217,7 +217,7 @@ main p {
 main .service {
   display: flex;
   align-items: center;
-  background: red;
+  background-color: #FFFFFF;
   margin-bottom: 8.438vh;
   padding: 8.438vh 5.333vw 8.438vh 5.333vw;
 }
@@ -247,11 +247,23 @@ main .picturesnone {
   height: 500px;
   background-color: gray;
   margin-top: 50px;
-  margin-bottom: 30px;
+}
+main .aboutcompany h1 {
+  margin-top: 12.658vh;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #212529;
+  text-align: left;
+  margin-bottom: 6.329vh;
 }
 main .aboutcompany p {
-  padding-bottom: 16.877vh;
   text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+  margin-bottom: 12.658vh;
 }
 main .servicesAboutCompany {
   display: flex;
@@ -284,6 +296,7 @@ main .serviceAboutCompany > a {
 main .discovermore {
   margin-top: 4.219vh;
   text-align: center;
+  margin-bottom: 21.097vh;
 }
 main .discovermore button {
   background-color: #00730C;
@@ -295,4 +308,65 @@ main .discovermore button {
   color: #FFFFFF;
   padding: 4.219vh 8vw 4.219vh 8vw;
   text-align: center;
+}
+main .whyChooseUs {
+  background-color: #0C4B35;
+  display: flex;
+  justify-content: center;
+}
+main .needpicture {
+  background-color: grey;
+  height: 217px;
+  width: 345px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+main .whyChooseUs h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 21.097vh;
+  margin-bottom: 6.329vh;
+}
+main .whyChooseUs p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding-bottom: 12.658vh;
+}
+main .properTakeCare {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .proper {
+  display: flex;
+  margin-bottom: 8.86vh;
+  width: calc(50% - 3.866vw);
+  align-items: center;
+}
+main .proper:nth-child(1), main .proper:nth-child(3) {
+  margin-right: 7.733vw;
+}
+main .proper a {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+main .tick {
+  height: 20px;
+  width: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2.666vw;
 }/*# sourceMappingURL=style.css.map */
