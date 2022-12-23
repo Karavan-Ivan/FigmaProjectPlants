@@ -107,11 +107,13 @@ header .menu {
     font-weight: 400;
     font-size: 14px;
     line-height: 25px;
-    padding-right: 0.52vw;
+    margin-right: 0.52vw;
+    padding: 0;
   }
   header .language img {
     width: 12px;
     height: 7px;
+    margin: 0;
   }
   header .address_phone a {
     display: flex;
@@ -119,7 +121,7 @@ header .menu {
     align-items: center;
   }
   header .address_phone img {
-    padding-right: 0.52vw;
+    margin-right: 0.52vw;
     height: 25px;
     width: 25px;
   }
@@ -214,10 +216,10 @@ main .entry {
 main .firstline {
   display: flex;
   align-items: center;
-  padding-bottom: 4.219vh;
+  margin-bottom: 4.219vh;
 }
 main .firstline li {
-  padding-left: 1.333vw;
+  margin-left: 1.333vw;
 }
 main .firstline li a {
   text-decoration: none;
@@ -227,10 +229,7 @@ main .firstline li a {
   line-height: 19px;
 }
 main .secondline {
-  padding-bottom: 6.329vh;
-}
-main .secondline span {
-  color: #00730C;
+  margin-bottom: 6.329vh;
 }
 main .secondline a {
   text-decoration: none;
@@ -240,7 +239,7 @@ main .secondline a {
   color: #212529;
 }
 main .thirdline {
-  padding-bottom: 16.877vh;
+  margin-bottom: 16.877vh;
 }
 main .thirdline a {
   font-weight: 400;
@@ -268,7 +267,7 @@ main .fourthline {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding-top: 8.438vh;
+  margin-top: 8.438vh;
 }
 main .fourthline li {
   width: 29.333vw;
@@ -281,15 +280,12 @@ main .fourthline li a {
   line-height: 19px;
 }
 main .fourthline img {
-  padding-left: 3.2vw;
+  margin-left: 3.2vw;
   align-self: center;
   display: block;
 }
 main .fifthline {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 17.721vh 0 14.767vh 0;
+  padding: 0;
 }
 main .fifthline button {
   border-radius: 32px;
@@ -311,7 +307,7 @@ main .fifthline span {
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
-  padding-right: 2.133vw;
+  margin-right: 2.133vw;
   color: #212529;
 }
 main .services h1 {
@@ -323,7 +319,7 @@ main .services h1 {
   margin-top: 21.097vh;
   margin-bottom: 6.329vh;
 }
-main h1 span {
+main span {
   color: #00730C;
 }
 main .services p {
@@ -363,9 +359,9 @@ main .service li:nth-child(2) {
   color: #676767;
   padding-top: 4.219vh;
 }
-main .picturesnone {
+main .picturesnone img {
   height: 500px;
-  background-color: gray;
+  width: 50px;
   margin-top: 50px;
 }
 main .aboutcompany h1 {
@@ -411,7 +407,8 @@ main .serviceAboutCompany li a {
   color: #212529;
 }
 main .serviceAboutCompany > a {
-  padding-bottom: 1.476vh;
+  margin-bottom: 1.476vh;
+  align-self: center;
 }
 main .discovermore {
   margin-top: 4.219vh;
@@ -434,10 +431,9 @@ main .whyChooseUs {
   display: flex;
   justify-content: center;
 }
-main .needpicture {
-  background-color: grey;
-  height: 217px;
-  width: 345px;
+main .needpicture img {
+  width: 200px;
+  height: 200px;
   margin-top: 50px;
   margin-bottom: 30px;
 }
@@ -492,8 +488,129 @@ main .tick {
 }
 @media (min-width: 1920px) {
   main .container {
-    padding: 0 13.333vw 0 13.333vw;
     display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  main .entry .container {
+    flex-direction: row-reverse;
+    padding: 0;
+  }
+  main .firstline, main .secondline, main .thirdline {
+    background: none;
+  }
+  main .imagenone img {
+    width: 1013px;
+    height: 673px;
+    margin: 5.33vh 0 0 4.843vw;
+  }
+  main .imagenone2 {
+    align-self: flex-end;
+  }
+  main .imagenone2 img {
+    width: 197px;
+    height: 278px;
+    margin: 0 3.072vw 6.952vh 0;
+  }
+  main .entry .row {
+    padding: 15.411vh 0 11.587vh 0;
+  }
+  main .firstline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.317vh;
+  }
+  main .firstline li {
+    margin-left: 0.26vw;
+  }
+  main .firstline li a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  main .secondline {
+    margin-bottom: 2.317vh;
+  }
+  main .secondline a {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 79px;
+  }
+  main .thirdline {
+    margin-bottom: 5.7937vh;
+  }
+  main .thirdline a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  main .button_fouthline1920 {
+    display: flex;
+    align-items: center;
+  }
+  main .buttonGetAQuate {
+    align-self: flex-start;
+  }
+  main .buttonGetAQuate button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 1.506vh 1.822vw 1.506vh 1.822vw;
+  }
+  main .fourthline {
+    margin: 0 0 0 1.5625vw;
+  }
+  main .fourthline li {
+    width: 100%;
+  }
+  main .fourthline li a {
+    color: #676767;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  main .fourthline img {
+    margin-left: 0.7812vw;
+    width: 20px;
+    height: 16px;
+  }
+  main .fifthline {
+    padding: 1.7381vh 0 14.767vh 1.7381;
+    flex-wrap: nowrap;
+    margin-top: 6.4889vh;
+    display: flex;
+  }
+  main .fifthline button {
+    padding: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background: none;
+    border: none;
+    border-radius: 0;
+    width: calc(33.33333% - 0.3472vw);
+    text-align: left;
+  }
+  main .fifthline button:first-child, main .fifthline button:nth-child(2) {
+    margin-right: 0.52vw;
+  }
+  main .fifthline button:last-child {
+    margin-right: 4.6354vw;
+  }
+  main .fifthline span {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 0.52vw;
+    border-radius: 35px;
+    background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .services .container {
     flex-direction: column;
   }
   main .services h1 {
@@ -563,5 +680,109 @@ main .tick {
   }
   main .service:hover li a {
     color: #FFF8F1;
+  }
+  main .aboutcompany .container {
+    padding: 11.587vh 13.281vw 12.977vh 13.281vw;
+  }
+  main .row {
+    padding: 5.156vh 0 6.083vh 0;
+  }
+  main .picturesnone img {
+    width: 700px;
+    height: 700px;
+    margin-right: 1.406vw;
+  }
+  main .serviceAboutCompany {
+    width: calc(50% - 0.78125vw);
+    margin-bottom: 3.476vh;
+    flex-direction: row;
+    padding: 1.738vh 0.26vw 1.738vh 1.5625vw;
+    align-items: center;
+  }
+  main .serviceAboutCompany:nth-child(1), main .serviceAboutCompany:nth-child(3) {
+    margin-right: 1.5625vw;
+  }
+  main .serviceAboutCompany:nth-child(3), main .serviceAboutCompany:nth-child(4) {
+    margin-bottom: 0;
+  }
+  main .serviceAboutCompany li a {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: left;
+  }
+  main .serviceAboutCompany > a {
+    margin: 0 1.5625vw 0 0;
+  }
+  main .serviceAboutCompany img {
+    width: 67px;
+    height: 67px;
+  }
+  main .aboutcompany h1 {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+    margin: 0;
+  }
+  main .aboutcompany p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 3.476vh 0 5.793vh 0;
+  }
+  main .discovermore {
+    text-align: left;
+    margin-top: 5.793vh;
+    margin-bottom: 0;
+  }
+  main .discovermore button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 1.506vh 1.822vw 1.506vh 1.822vw;
+  }
+  main .whyChooseUs .container {
+    padding: 17.96vh 13.281vw 17.96vh 13.281vw;
+    flex-direction: row-reverse;
+  }
+  main .needpicture img {
+    width: 672px;
+    height: 426px;
+    margin: 0.521vh 0 0.753vh 4.322vw;
+  }
+  main .whyChooseUs h1 {
+    text-align: left;
+    margin: 0;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 61px;
+  }
+  main .whyChooseUs p {
+    text-align: left;
+    margin: 3.476vh 0 5.793vh 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0;
+  }
+  main .proper {
+    width: calc(50% - 3.0729vw);
+    margin-bottom: 2.317vh;
+  }
+  main .proper:nth-child(1), main .proper:nth-child(3) {
+    margin-right: 6.1458vw;
+  }
+  main .proper:nth-child(3), main .proper:nth-child(4) {
+    margin-bottom: 0;
+  }
+  main .proper a {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  main .tick {
+    height: 30px;
+    width: 30px;
+    margin-right: 1.041vw;
   }
 }/*# sourceMappingURL=style.css.map */

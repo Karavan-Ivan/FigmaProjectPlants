@@ -22,10 +22,10 @@ img {
 .firstline {
     display: flex;
     align-items: center;
-    padding-bottom: 4.219vh;
+    margin-bottom: 4.219vh;
 }
 .firstline li {
-    padding-left: 1.333vw;
+    margin-left: 1.333vw;
 }
 .firstline li a {
     text-decoration: none;
@@ -35,10 +35,7 @@ img {
     line-height: 19px;
 }
 .secondline {
-    padding-bottom: 6.329vh;
-}
-.secondline span {
-    color: #00730C;
+    margin-bottom: 6.329vh;
 }
 .secondline a {
     text-decoration: none;
@@ -48,7 +45,7 @@ img {
     color: #212529;
 }
 .thirdline {
-    padding-bottom: 16.877vh;
+    margin-bottom: 16.877vh;
 }
 .thirdline a {
     font-weight: 400;
@@ -76,7 +73,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    padding-top: 8.438vh;
+    margin-top: 8.438vh;
 }
 .fourthline li {
     width: 29.333vw;
@@ -89,15 +86,12 @@ img {
     line-height: 19px;
 }
 .fourthline img {
-    padding-left: 3.2vw;
+    margin-left: 3.2vw;
     align-self: center;
     display: block;
 }
 .fifthline {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 17.721vh 0 14.767vh 0;
+    padding: 0;
 }
 .fifthline button {
     border-radius: 32px;
@@ -119,7 +113,7 @@ img {
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
-    padding-right: 2.133vw;
+    margin-right: 2.133vw;
     color: #212529;
 }
 .services h1 {
@@ -131,7 +125,7 @@ img {
     margin-top: 21.097vh;
     margin-bottom: 6.329vh;
 }
-h1 span {
+span {
     color: #00730C;
 }
 .services p {
@@ -171,9 +165,9 @@ h1 span {
     color: #676767;
     padding-top: 4.219vh;
 }
-.picturesnone {
+.picturesnone img{
     height: 500px;
-    background-color: gray;
+    width: 50px;
     margin-top: 50px;
 }
 .aboutcompany h1 {
@@ -219,7 +213,8 @@ h1 span {
     color: #212529;
 }
 .serviceAboutCompany > a {
-    padding-bottom: 1.476vh;
+    margin-bottom: 1.476vh;
+    align-self: center;
 }
 .discovermore {
     margin-top: 4.219vh;
@@ -242,10 +237,9 @@ h1 span {
     display: flex;
     justify-content: center;
 }
-.needpicture {
-    background-color: grey;
-    height: 217px;
-    width: 345px;
+.needpicture img {
+    width: 200px;
+    height: 200px;
     margin-top: 50px;
     margin-bottom: 30px;
 } 
@@ -301,8 +295,129 @@ h1 span {
 
 @media (min-width: 1920px) {
     .container {
-        padding: 0 13.333vw 0 13.333vw;
         display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+    .entry .container {
+        flex-direction: row-reverse;
+        padding: 0;
+    }
+    .firstline, .secondline, .thirdline {
+        background: none;
+    }
+    .imagenone img {
+        width: 1013px;
+        height: 673px;
+        margin: 5.33vh 0 0 4.843vw;
+    }
+    .imagenone2 {
+        align-self: flex-end;
+    }
+    .imagenone2 img {
+        width: 197px;
+        height: 278px;
+        margin: 0 3.072vw 6.952vh 0;
+    }
+    .entry .row {
+        padding: 15.411vh 0 11.587vh 0;
+    }
+    .firstline {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.317vh;
+    }
+    .firstline li {
+        margin-left: 0.26vw;
+    }
+    .firstline li a {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .secondline {
+        margin-bottom: 2.317vh;
+    }
+    .secondline a {
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 79px;
+    }
+    .thirdline {
+        margin-bottom: 5.7937vh;
+    }
+    .thirdline a {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .button_fouthline1920 {
+        display: flex;
+        align-items: center;
+    }
+    .buttonGetAQuate {
+        align-self: flex-start;
+    }
+    .buttonGetAQuate button {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 1.506vh 1.822vw 1.506vh 1.822vw;
+    }
+    .fourthline {
+        margin: 0 0 0 1.5625vw;
+    }
+    .fourthline li {
+        width: 100%;
+    }
+    .fourthline li a {
+        color: #676767;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .fourthline img {
+        margin-left: 0.7812vw;
+        width: 20px;
+        height: 16px;
+    }
+    .fifthline {
+        padding: 1.7381vh 0 14.767vh 1.7381;
+        flex-wrap: nowrap;
+        margin-top: 6.4889vh;
+        display: flex;
+    }
+    .fifthline button {
+        padding: 0;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        background: none;
+        border: none;
+        border-radius: 0;
+        width: calc(33.33333% - 0.3472vw);
+        text-align: left;
+    }
+    .fifthline button:first-child, .fifthline button:nth-child(2)  {
+        margin-right: 0.52vw;
+    }
+    .fifthline button:last-child {
+        margin-right: 4.6354vw;
+    }
+    .fifthline span {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        margin-right: 0.52vw;
+        border-radius: 35px;
+        background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .services .container {
         flex-direction: column;
     }
     .services h1 {
@@ -372,5 +487,109 @@ h1 span {
     }
     .service:hover li a {
         color: #FFF8F1;
+    }
+    .aboutcompany .container {
+        padding: 11.587vh 13.281vw 12.977vh 13.281vw;
+    }
+    .row {
+        padding: 5.156vh 0 6.083vh 0;
+    }
+    .picturesnone img {
+        width: 700px;
+        height: 700px;
+        margin-right: 1.406vw;
+    }
+    .serviceAboutCompany {
+        width: calc(50% - 0.78125vw);
+        margin-bottom: 3.476vh;
+        flex-direction: row;
+        padding: 1.738vh 0.26vw 1.738vh 1.5625vw;
+        align-items: center;
+    }
+    .serviceAboutCompany:nth-child(1), .serviceAboutCompany:nth-child(3) {
+        margin-right: 1.5625vw;
+    }
+    .serviceAboutCompany:nth-child(3), .serviceAboutCompany:nth-child(4) {
+        margin-bottom: 0;
+    }
+    .serviceAboutCompany li a {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: left;
+    }
+    .serviceAboutCompany > a {
+        margin: 0 1.5625vw 0 0;
+    }
+    .serviceAboutCompany img{
+        width: 67px;
+        height: 67px;
+    }
+    .aboutcompany h1 {
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 61px;
+        margin: 0;
+    }
+    .aboutcompany p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        margin: 3.476vh 0 5.793vh 0;
+    }
+    .discovermore {
+        text-align: left;
+        margin-top: 5.793vh;
+        margin-bottom: 0;
+    }
+    .discovermore button {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 1.506vh 1.822vw 1.506vh 1.822vw;
+    }
+    .whyChooseUs .container {
+        padding: 17.96vh 13.281vw 17.96vh 13.281vw;
+        flex-direction: row-reverse;
+    }
+    .needpicture img {
+        width: 672px;
+        height: 426px;
+        margin: 0.521vh 0 0.753vh 4.322vw;
+    }
+    .whyChooseUs h1 {
+        text-align: left;
+        margin: 0;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 61px;
+    }
+    .whyChooseUs p {
+        text-align: left;
+        margin: 3.476vh 0 5.793vh 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        padding: 0;
+    }
+    .proper {
+        width: calc(50% - 3.0729vw);
+        margin-bottom: 2.317vh;
+    }
+    .proper:nth-child(1), .proper:nth-child(3) {
+        margin-right: 6.1458vw;
+    }
+    .proper:nth-child(3), .proper:nth-child(4) {
+        margin-bottom: 0;
+    }
+    .proper a {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .tick {
+        height: 30px;
+        width: 30px;
+        margin-right: 1.041vw;
     }
 }

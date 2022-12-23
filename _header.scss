@@ -104,11 +104,13 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 25px;
-        padding-right: 0.52vw;
+        margin-right: 0.52vw;
+        padding: 0;
     }
     .language img {
         width: 12px;
         height: 7px;
+        margin: 0;
     }
     .address_phone a {
         display: flex;
@@ -116,7 +118,7 @@
         align-items: center;
     }
     .address_phone img {
-        padding-right: 0.52vw;
+        margin-right: 0.52vw;
         height: 25px;
         width: 25px;
     }
