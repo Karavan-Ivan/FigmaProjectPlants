@@ -1,3 +1,7 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
 .imagenone {
     display: flex;
     flex-direction: column;
@@ -19,10 +23,17 @@ img {
 .entry {
     background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
 }
+.imagenone2 {
+    display: none;
+}
+.firstline, .secondline, .thirdline {
+    background: none;
+}
 .firstline {
     display: flex;
     align-items: center;
     margin-bottom: 4.219vh;
+    margin-top: 20.4641vh;
 }
 .firstline li {
     margin-left: 1.333vw;
@@ -47,7 +58,7 @@ img {
 .thirdline {
     margin-bottom: 16.877vh;
 }
-.thirdline a {
+.thirdline li {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
@@ -73,7 +84,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    margin-top: 8.438vh;
+    margin: 8.5654vh 0 17.4261vh 0;
 }
 .fourthline li {
     width: 29.333vw;
@@ -92,10 +103,14 @@ img {
 }
 .fifthline {
     padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 0 14.7679vh 0;
 }
 .fifthline button {
     border-radius: 32px;
-    background-color: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
+    background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
     border: none;
     padding: 3.375vh 2.666vw 3.375vh 2.666vw;
     font-weight: 400;
@@ -115,6 +130,9 @@ img {
     line-height: 16px;
     margin-right: 2.133vw;
     color: #212529;
+}
+.fifthline button:last-child {
+    display: none;
 }
 .services h1 {
     font-weight: 700;
@@ -142,6 +160,7 @@ span {
     background-color: #FFFFFF;
     margin-bottom: 8.438vh;
     padding: 8.438vh 5.333vw 8.438vh 5.333vw;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
 }
 .service:last-child {
     margin: 0;
@@ -166,8 +185,8 @@ span {
     padding-top: 4.219vh;
 }
 .picturesnone img{
-    height: 500px;
-    width: 50px;
+    height: 100%;
+    width: 100%;
     margin-top: 50px;
 }
 .aboutcompany h1 {
@@ -185,7 +204,7 @@ span {
     font-size: 14px;
     line-height: 22px;
     color: #676767;
-    margin-bottom: 12.658vh;
+    margin-bottom: 16.8776vh;
 }
 .servicesAboutCompany {
     display: flex;
@@ -200,6 +219,7 @@ span {
     flex-direction: column;
     align-items: center;
     background-color: #FFFFFF;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
 }
 .serviceAboutCompany:nth-child(1), .serviceAboutCompany:nth-child(3) {
     margin-right: 5.333vw;
@@ -238,10 +258,10 @@ span {
     justify-content: center;
 }
 .needpicture img {
-    width: 200px;
-    height: 200px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    width: 345px;
+    height: 217px;
+    margin-top: 21.097vh;
+    margin-bottom: 12.6582vh;
 } 
 .whyChooseUs h1 {
     font-weight: 700;
@@ -249,7 +269,6 @@ span {
     line-height: 38px;
     color: #FFFFFF; 
     text-align: center;
-    margin-top: 21.097vh;
     margin-bottom: 6.329vh;
 }
 .whyChooseUs p {
@@ -303,9 +322,6 @@ span {
         flex-direction: row-reverse;
         padding: 0;
     }
-    .firstline, .secondline, .thirdline {
-        background: none;
-    }
     .imagenone img {
         width: 1013px;
         height: 673px;
@@ -313,6 +329,7 @@ span {
     }
     .imagenone2 {
         align-self: flex-end;
+        display: block;
     }
     .imagenone2 img {
         width: 197px;
@@ -325,7 +342,7 @@ span {
     .firstline {
         display: flex;
         align-items: center;
-        margin-bottom: 2.317vh;
+        margin: 0 0 2.317vh 0;
     }
     .firstline li {
         margin-left: 0.26vw;
@@ -346,7 +363,7 @@ span {
     .thirdline {
         margin-bottom: 5.7937vh;
     }
-    .thirdline a {
+    .thirdline li {
         font-weight: 400;
         font-size: 18px;
         line-height: 30px;
@@ -403,6 +420,7 @@ span {
     }
     .fifthline button:last-child {
         margin-right: 4.6354vw;
+        display: flex;
     }
     .fifthline span {
         font-weight: 700;
@@ -464,6 +482,7 @@ span {
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
+        font-family: 'Poppins', sans-serif;
     }
     .service li a {
         font-weight: 700;
@@ -526,7 +545,7 @@ span {
         height: 67px;
     }
     .aboutcompany h1 {
-        font-weight: 800;
+        font-weight: bold;
         font-size: 45px;
         line-height: 61px;
         margin: 0;
@@ -536,6 +555,7 @@ span {
         font-size: 16px;
         line-height: 28px;
         margin: 3.476vh 0 5.793vh 0;
+        font-family: 'Poppins', sans-serif;
     }
     .discovermore {
         text-align: left;
