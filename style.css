@@ -617,7 +617,7 @@ main .tick {
   main .fifthline {
     padding: 1.7381vh 0 14.767vh 1.7381;
     flex-wrap: nowrap;
-    margin-top: 6.4889vh;
+    margin: 6.4889vh 0 0 0;
     display: flex;
   }
   main .fifthline button {
