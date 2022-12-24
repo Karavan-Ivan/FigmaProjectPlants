@@ -378,6 +378,7 @@ main .service {
   margin-bottom: 8.438vh;
   padding: 8.438vh 5.333vw 8.438vh 5.333vw;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 10px;
 }
 main .service:last-child {
   margin: 0;
@@ -437,6 +438,7 @@ main .serviceAboutCompany {
   align-items: center;
   background-color: #FFFFFF;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 5px;
 }
 main .serviceAboutCompany:nth-child(1), main .serviceAboutCompany:nth-child(3) {
   margin-right: 5.333vw;
@@ -653,14 +655,14 @@ main .tick {
   }
   main .services .container {
     flex-direction: column;
+    padding: 11.587vh 13.281vw 0 13.281vw;
   }
   main .services h1 {
     font-weight: 800;
     font-size: 45px;
     line-height: 61px;
     color: #212529;
-    margin-top: 11.587vh;
-    margin-bottom: 3.476vh;
+    margin: 0 0 3.476vh 0;
   }
   main .services p {
     font-weight: 400;
