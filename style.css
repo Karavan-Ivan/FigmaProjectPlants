@@ -8,13 +8,14 @@ header * {
 header .header {
   display: flex;
   justify-content: center;
-  height: 52.742vh;
+  height: 33.3333vw;
 }
 header .container {
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 52.742vh;
+  height: 33.3333vw;
+  margin: auto;
 }
 header .row {
   display: flex;
@@ -28,11 +29,12 @@ header .col-12 {
 }
 header .top_navbar {
   width: 100vw;
-  max-height: 23.2vh;
+  max-height: 14.6666vw;
   background-color: #0C4B35;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 5.3333vw 0 5.3333vw;
 }
 header .address_phone {
   display: flex;
@@ -42,7 +44,7 @@ header .address_phone img {
   display: block;
 }
 header .address_phone a {
-  margin-right: 5.3vw;
+  margin-right: 5.3333vw;
 }
 header .address_phone span {
   display: none;
@@ -50,27 +52,26 @@ header .address_phone span {
 header .language {
   display: flex;
   align-items: center;
-}
-header .address_phone, header .language {
-  padding: 8.438vh 5.333vw 6.329vh 5.333vw;
+  justify-content: flex-end;
 }
 header .language a {
-  font-size: 12px;
+  font-size: calc(12px + 0.1041666667vw);
   font-weight: 400;
-  line-height: 16px;
+  line-height: calc(14px + 0.5729166667vw);
   text-decoration: none;
   color: #FFFFFF;
-  padding-right: 1.333vw;
+}
+header .language a:first-child {
+  margin-right: 1.333vw;
 }
 header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 29.535vh;
-  max-height: 29.535vh;
-  padding: 0 4vw 0 4vw;
+  max-height: 18.6666vw;
   background-color: white;
+  padding: 0 4vw 0 4vw;
 }
 header .call_menu {
   display: flex;
@@ -84,32 +85,33 @@ header .call_menu span {
 header .call_menu > a:first-child {
   background-color: #00730C;
   border-radius: 10px;
-  width: 40px;
-  height: 34px;
+  width: 10.6666vw;
+  height: 9.0666vw;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 header .call_menu > a:first-child img {
-  width: 20px;
-  height: 20px;
+  width: 5.3333vw;
+  height: 5.3333vw;
 }
 header .menu {
   display: none;
 }
-@media (min-width: 1920px) {
+@media (min-width: 1600px) {
   header .container, header header {
     height: 16.6859vh;
+    padding: 0;
   }
   header .top_navbar {
     height: 6.836vh;
     max-height: 6.836vh;
-    padding: 1.969vh 13.072vw 1.969vh 13.072vw;
+    padding: 17px 13.0729vw 17px 13.0729vw;
   }
   header .navbar {
     height: 9.849vh;
     max-height: 9.849vh;
-    padding: 1.738vh 13.333vw 1.738vh 13.333vw;
+    padding: 15px 13.3333vw 15px 13.3333vw;
     justify-content: flex-start;
   }
   header .address_phone, header .language {
@@ -120,16 +122,15 @@ header .menu {
     color: #FFFFFF;
   }
   header .language a {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-    margin-right: 0.52vw;
     padding: 0;
     font-family: "Poppins", sans-serif;
   }
+  header .language a:first-child {
+    margin-right: 0.52vw;
+  }
   header .language img {
-    width: 12px;
-    height: 7px;
+    width: 0.625vw;
+    height: 0.8111vh;
     margin: 0;
   }
   header .address_phone a {
@@ -137,19 +138,19 @@ header .menu {
     margin-right: 1.562vw;
     align-items: center;
     font-family: "Poppins", sans-serif;
+    font-size: calc(10px + 0.2083333333vw);
     font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
+    line-height: 24px;
   }
   header .address_phone img {
     margin-right: 0.52vw;
-    height: 25px;
-    width: 25px;
+    height: 2.8968vh;
+    width: 1.302vw;
   }
   header .call_menu {
-    justify-content: flex-end;
     flex-direction: row-reverse;
     width: 100%;
+    justify-content: flex-start;
   }
   header .call_menu > a:first-child {
     display: flex;
@@ -157,16 +158,16 @@ header .menu {
     background-color: #00730C;
     padding: 1.274vh 1.7968vw 1.274vh 1.7968vw;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: calc(16px + 0.1041666667vw);
+    line-height: calc(20px + 0.2083333333vw);
     text-decoration: none;
     border-radius: 5px;
     width: auto;
     height: 100%;
   }
   header .call_menu > a:first-child img {
-    width: 30px;
-    height: 30px;
+    width: 1.5625vw;
+    height: 3.4762vh;
     display: block;
     margin-right: 0.52vw;
   }
@@ -180,8 +181,8 @@ header .menu {
   header .menu a {
     text-decoration: none;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: calc(14px + 0.1041666667vw);
+    line-height: calc(19px + 0.0520833333vw);
     color: #212529;
     text-align: center;
     display: flex;
@@ -215,33 +216,77 @@ header .menu {
     display: inline;
   }
 }
+@media (min-width: 1024px) {
+  header .navbar > a:first-child {
+    margin-right: calc(44px + 588.2 * (100vw - 1024px) / 1920);
+  }
+  header .menu li {
+    margin-right: calc(13px + 52.7 * (100vw - 1024px) / 1920);
+  }
+  header .menu li:last-child {
+    margin-right: calc(23px + 132.6 * (100vw - 1024px) / 1920);
+  }
+}
 
 main * {
   font-family: "Nunito", sans-serif;
 }
-main .imagenone {
+main .container {
+  padding: 0 15px 0 15px;
+  margin: auto;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+main .entry {
   width: 100%;
+  height: 719px;
+  display: flex;
+  flex-direction: column;
+  gap: 48.5px;
+}
+main .entryBackground {
+  background: url(image/entry_flowerpot.jpg) no-repeat bottom 15px left/83px 118px, linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%) 100vw 719px;
+  width: 100vw;
+  height: inherit;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+main .entryImage {
+  height: 240px;
+  position: relative;
+}
+main .entryImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: -15px;
+  width: 100vw;
+  height: 240px;
+  background-image: url(image/skillup.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 240px;
+}
+main [class*=line] {
+  z-index: 1;
 }
 main img {
   display: block;
-}
-main .container {
-  width: 100%;
-  padding: 0 4.133vw 0 3.866vw;
 }
 main .row {
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 30px;
 }
-main .entry {
-  background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
-}
-main .imagenone2 {
-  display: none;
+main .entryInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 main .firstline, main .secondline, main .thirdline {
   background: none;
@@ -249,41 +294,44 @@ main .firstline, main .secondline, main .thirdline {
 main .firstline {
   display: flex;
   align-items: center;
-  margin-bottom: 4.219vh;
-  margin-top: 20.4641vh;
+  gap: 5px;
+  padding-bottom: 10px;
 }
-main .firstline li {
-  margin-left: 1.333vw;
-}
-main .firstline li a {
-  text-decoration: none;
-  font-size: 14px;
+main .firstline h6 {
+  font-style: normal;
   font-weight: 700;
-  color: #212529;
+  font-size: 14px;
   line-height: 19px;
+  color: #212529;
 }
 main .secondline {
-  margin-bottom: 6.329vh;
+  padding-bottom: 15px;
 }
-main .secondline a {
-  text-decoration: none;
+main .secondline h1 {
+  font-style: normal;
+  font-weight: 700;
   font-size: 28px;
   line-height: 38px;
-  font-weight: 700;
   color: #212529;
+  text-align: left;
 }
 main .thirdline {
-  margin-bottom: 16.877vh;
+  padding-bottom: 40px;
 }
-main .thirdline li {
+main .thirdline h6 {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #212529;
-  text-decoration: none;
 }
-main .buttonGetAQuate {
+main .button_fouthline1920 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   align-self: center;
+  gap: 20.3px;
+  padding-bottom: 41.3px;
 }
 main .buttonGetAQuate button {
   background-color: #00730C;
@@ -291,45 +339,37 @@ main .buttonGetAQuate button {
   border-radius: 5px;
   width: 100%;
   color: white;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  padding: 5.063vh 28vw 5.063vh 28vw;
+  padding: 12px 105px;
 }
-main .fourthline {
+main .seeHowItWorks {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: row;
-  margin: 8.5654vh 0 17.4261vh 0;
+  gap: 12px;
 }
-main .fourthline li {
-  width: 29.333vw;
-}
-main .fourthline li a {
-  text-decoration: none;
+main .seeHowItWorks h6 {
   color: #00730C;
+  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
 }
-main .fourthline img {
-  margin-left: 3.2vw;
-  align-self: center;
-  display: block;
-}
 main .fifthline {
-  padding: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 0 0 14.7679vh 0;
+  align-self: flex-end;
 }
 main .fifthline button {
   border-radius: 32px;
   background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
   border: none;
-  padding: 3.375vh 2.666vw 3.375vh 2.666vw;
+  padding: 8px 10px;
+  font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 14px;
@@ -337,188 +377,178 @@ main .fifthline button {
   display: flex;
   align-items: center;
   color: #212529;
-}
-main .fifthline button:first-child {
-  margin-right: 3.2vw;
+  gap: 8px;
 }
 main .fifthline span {
+  font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
-  margin-right: 2.133vw;
   color: #212529;
 }
 main .fifthline button:last-child {
   display: none;
 }
-main .services h1 {
+main .services {
+  display: flex;
+  flex-direction: column;
+}
+main .article h1 {
+  font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 38px;
   color: #212529;
   text-align: center;
-  margin-top: 21.097vh;
-  margin-bottom: 6.329vh;
+  padding: 0 0 15px 0;
 }
 main span {
   color: #00730C;
 }
-main .services p {
+main .article h6 {
   text-align: center;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #676767;
-  margin-bottom: 12.658vh;
 }
 main .service {
   display: flex;
   align-items: center;
   background-color: #FFFFFF;
-  margin-bottom: 8.438vh;
-  padding: 8.438vh 5.333vw 8.438vh 5.333vw;
+  width: 100%;
+  height: 116px;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-  border-radius: 10px;
+  border-radius: 5px;
+  gap: 20px;
 }
-main .service:last-child {
-  margin: 0;
+main .serviceInfo {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
-main .service li {
-  text-align: left;
-  text-decoration: none;
-  padding-left: 5.333vw;
-}
-main .service li a {
+main .serviceInfo h5 {
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   color: #212529;
-  text-decoration: none;
 }
-main .service li:nth-child(2) {
+main .serviceInfo h6 {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #676767;
-  padding-top: 4.219vh;
 }
-main .picturesnone img {
+main .aboutcompanyImage img {
   height: 100%;
   width: 100%;
-  margin-top: 50px;
 }
-main .aboutcompany h1 {
-  margin-top: 12.658vh;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 38px;
-  color: #212529;
-  text-align: left;
-  margin-bottom: 6.329vh;
-}
-main .aboutcompany p {
-  text-align: left;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #676767;
-  margin-bottom: 16.8776vh;
+main .aboutcompany .article {
+  padding-bottom: 10px;
 }
 main .servicesAboutCompany {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 main .serviceAboutCompany {
-  width: calc(50% - 2.666vw);
-  margin-bottom: 8.438vh;
-  padding: 6.329vh 4vw 6.329vh 4vw;
+  width: 162px;
+  height: 94px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #FFFFFF;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   border-radius: 5px;
+  gap: 5px;
+  padding: 15px;
 }
-main .serviceAboutCompany:nth-child(1), main .serviceAboutCompany:nth-child(3) {
-  margin-right: 5.333vw;
-}
-main .serviceAboutCompany li a {
-  text-decoration: none;
+main .serviceAboutCompany h5 {
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
   text-align: center;
   color: #212529;
 }
-main .serviceAboutCompany > a {
-  margin-bottom: 1.476vh;
-  align-self: center;
+main .serviceAboutCompany img {
+  width: 40px;
+  height: 40px;
 }
 main .discovermore {
-  margin-top: 4.219vh;
-  text-align: center;
-  margin-bottom: 21.097vh;
-}
-main .discovermore button {
   background-color: #00730C;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   border-radius: 5px;
   border: none;
   color: #FFFFFF;
-  padding: 4.219vh 8vw 4.219vh 8vw;
   text-align: center;
+  width: 167px;
+  height: 40px;
+  align-self: center;
 }
 main .whyChooseUs {
   background-color: #0C4B35;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 684px;
+  gap: 30px;
 }
-main .needpicture img {
+main .whyChooseUsBackground {
+  position: absolute;
+  background: #0C4B35;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: inherit;
+}
+main .whyChooseUs .article {
+  padding-bottom: 10px;
+}
+main .whyChooseUs > img {
   width: 345px;
   height: 217px;
-  margin-top: 21.097vh;
-  margin-bottom: 12.6582vh;
+  z-index: 1;
+}
+main .whyChooseUs .row {
+  z-index: 1;
 }
 main .whyChooseUs h1 {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 38px;
   color: #FFFFFF;
-  text-align: center;
-  margin-bottom: 6.329vh;
 }
-main .whyChooseUs p {
-  text-align: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
+main .whyChooseUs h6 {
   color: #FFFFFF;
-  padding-bottom: 12.658vh;
+  padding: 0 0 10px 0;
 }
 main .properTakeCare {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px 29px;
 }
 main .proper {
   display: flex;
-  margin-bottom: 8.86vh;
-  width: calc(50% - 3.866vw);
+  width: 158px;
   align-items: center;
+  gap: 10px;
 }
-main .proper:nth-child(1), main .proper:nth-child(3) {
-  margin-right: 7.733vw;
-}
-main .proper a {
-  text-align: center;
-  text-decoration: none;
+main .proper h5 {
+  text-align: left;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
+  text-transform: capitalize;
 }
 main .tick {
   height: 20px;
@@ -528,306 +558,311 @@ main .tick {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 2.666vw;
 }
-@media (min-width: 1920px) {
+@media (min-width: 1600px) {
   main .container {
+    padding: 0;
+    width: 1410px;
+    position: static;
+  }
+  main .row {
+    gap: 50px;
+  }
+  main .entry {
     display: flex;
-    flex-direction: row;
-    padding: 0;
-  }
-  main .entry .container {
     flex-direction: row-reverse;
-    padding: 0;
+    justify-content: flex-end;
+    gap: 93px;
   }
-  main .imagenone img {
-    width: 1013px;
+  main .entryBackground {
+    background: url(image/entry_flowerpot.jpg) no-repeat bottom 15px left/92px 178px, linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%) 100vw 719px;
+    width: 100vw;
+    height: inherit;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+  main .entryImage {
     height: 673px;
-    margin: 5.33vh 0 0 4.843vw;
+    position: relative;
   }
-  main .imagenone2 {
-    align-self: flex-end;
-    display: block;
-  }
-  main .imagenone2 img {
-    width: 197px;
-    height: 278px;
-    margin: 0 3.072vw 6.952vh 0;
+  main .entryImage::after {
+    content: "";
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 856px;
+    height: 673px;
+    background-image: url(image/skillup.jpg);
+    background-repeat: no-repeat;
+    background-size: 856px 673px;
   }
   main .entry .row {
-    padding: 15.411vh 0 11.587vh 0;
+    justify-content: center;
+    width: 556px;
+  }
+  main .entryInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 33px;
   }
   main .firstline {
     display: flex;
     align-items: center;
-    margin: 0 0 2.317vh 0;
+    gap: 5px;
+    padding: 0;
   }
-  main .firstline li {
-    margin-left: 0.26vw;
-  }
-  main .firstline li a {
+  main .firstline h6 {
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    color: #212529;
   }
   main .secondline {
-    margin-bottom: 2.317vh;
+    padding: 0;
   }
-  main .secondline a {
+  main .secondline h1 {
+    font-style: normal;
     font-weight: 800;
     font-size: 58px;
     line-height: 79px;
+    color: #212529;
+    text-align: left;
   }
   main .thirdline {
-    margin-bottom: 5.7937vh;
+    padding-bottom: 30px;
   }
-  main .thirdline li {
+  main .thirdline h6 {
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
+    color: #676767;
   }
   main .button_fouthline1920 {
     display: flex;
+    flex-direction: row;
     align-items: center;
-  }
-  main .buttonGetAQuate {
     align-self: flex-start;
+    gap: 30px;
+    padding-bottom: 43px;
   }
   main .buttonGetAQuate button {
+    background-color: #00730C;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    padding: 1.506vh 1.822vw 1.506vh 1.822vw;
+    padding: 13px 35px;
   }
-  main .fourthline {
-    margin: 0 0 0 1.5625vw;
+  main .seeHowItWorks {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
   }
-  main .fourthline li {
-    width: 100%;
-  }
-  main .fourthline li a {
-    color: #676767;
+  main .seeHowItWorks h6 {
+    color: #00730C;
+    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 30px;
   }
-  main .fourthline img {
-    margin-left: 0.7812vw;
-    width: 20px;
-    height: 16px;
-  }
   main .fifthline {
-    padding: 1.7381vh 0 14.767vh 1.7381;
-    flex-wrap: nowrap;
-    margin: 6.4889vh 0 0 0;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: flex-start;
   }
   main .fifthline button {
-    padding: 0;
+    border: none;
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    background: none;
-    border: none;
-    border-radius: 0;
-    width: calc(33.33333% - 0.3472vw);
-    text-align: left;
-  }
-  main .fifthline button:first-child, main .fifthline button:nth-child(2) {
-    margin-right: 0.52vw;
-  }
-  main .fifthline button:last-child {
-    margin-right: 4.6354vw;
+    text-align: center;
     display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: #212529;
+    gap: 10px;
+    background: none;
   }
   main .fifthline span {
+    border-radius: 35px;
+    background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);
+    font-style: normal;
     font-weight: 700;
     font-size: 15px;
     line-height: 20px;
-    margin-right: 0.52vw;
-    border-radius: 35px;
-    background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);
-    height: 50px;
-    width: 50px;
+    color: #212529;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 15px 7px;
+    width: 50px;
+    height: 50px;
   }
-  main .services .container {
-    flex-direction: column;
-    padding: 11.587vh 13.281vw 0 13.281vw;
+  main .fifthline:last-child button {
+    display: flex;
   }
-  main .services h1 {
+  main .article h1 {
     font-weight: 800;
     font-size: 45px;
     line-height: 61px;
     color: #212529;
-    margin: 0 0 3.476vh 0;
   }
-  main .services p {
+  main .article h6 {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: #676767;
-    margin-bottom: 5.793vh;
-    max-width: 59.166vw;
-    align-self: center;
   }
-  main .services .row {
-    flex-direction: row;
+  main .services .article h6 {
+    padding: 0 137px 0 137px;
+  }
+  main .serviceAll {
+    display: flex;
     flex-wrap: wrap;
+    gap: 30px;
   }
   main .service {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: calc(25% - 1.171875vw);
-    padding: 6.952vh 2.291vw 6.952vh 2.291vw;
-    margin-bottom: 3.476vh;
-    margin-right: 1.5625vw;
+    width: 330px;
+    height: 366px;
+    box-shadow: none;
+    border-radius: 10px;
+    gap: 50px;
   }
-  main .service li {
+  main .serviceInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  main .serviceInfo h5 {
+    font-size: 24px;
+    line-height: 33px;
     text-align: center;
-    padding: 0;
-    max-width: 243px;
   }
-  main .service li:first-child {
-    margin-top: 5.793vh;
+  main .serviceInfo h6 {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    width: 243px;
+    font-family: "Poppins", sans-serif;
   }
-  main .service li:nth-child(2) {
+  main .service img {
+    width: 70px;
+    height: 70px;
+  }
+  main .aboutcompany {
+    display: flex;
+    gap: 27px;
+  }
+  main .aboutcompanyImage img {
+    width: 625px;
+    height: 903px;
+  }
+  main .aboutcompany .article {
     padding: 0;
-    margin-top: 1.158vh;
+  }
+  main .aboutcompany .article h1 {
+    text-align: left;
+    padding-bottom: 30px;
+  }
+  main .aboutcompany .article h6 {
+    text-align: left;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    font-family: "Poppins", sans-serif;
+    width: 672px;
   }
-  main .service li a {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
-    text-align: center;
-  }
-  main .service img {
-    height: 70px;
-    width: 70px;
-  }
-  main .service:last-child, main .service:nth-child(4) {
-    margin-bottom: 3.476vh;
-    margin-right: 0;
-  }
-  main .service:hover {
-    background-color: #00730C;
-  }
-  main .service:hover li:last-child {
-    color: #FFFFFF;
-  }
-  main .service:hover li a {
-    color: #FFF8F1;
-  }
-  main .aboutcompany .container {
-    padding: 11.587vh 13.281vw 12.977vh 13.281vw;
-  }
-  main .row {
-    padding: 5.156vh 0 6.083vh 0;
-  }
-  main .picturesnone img {
-    width: 700px;
-    height: 700px;
-    margin-right: 1.406vw;
+  main .servicesAboutCompany {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
   main .serviceAboutCompany {
-    width: calc(50% - 0.78125vw);
-    margin-bottom: 3.476vh;
+    width: 330px;
+    height: 97px;
     flex-direction: row;
-    padding: 1.738vh 0.26vw 1.738vh 1.5625vw;
-    align-items: center;
+    box-shadow: none;
+    gap: 30px;
+    padding: 0;
   }
-  main .serviceAboutCompany:nth-child(1), main .serviceAboutCompany:nth-child(3) {
-    margin-right: 1.5625vw;
-  }
-  main .serviceAboutCompany:nth-child(3), main .serviceAboutCompany:nth-child(4) {
-    margin-bottom: 0;
-  }
-  main .serviceAboutCompany li a {
-    font-weight: 700;
+  main .serviceAboutCompany h5 {
     font-size: 24px;
     line-height: 33px;
     text-align: left;
-  }
-  main .serviceAboutCompany > a {
-    margin: 0 1.5625vw 0 0;
   }
   main .serviceAboutCompany img {
     width: 67px;
     height: 67px;
   }
-  main .aboutcompany h1 {
-    font-weight: bold;
-    font-size: 45px;
-    line-height: 61px;
-    margin: 0;
-  }
-  main .aboutcompany p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    margin: 3.476vh 0 5.793vh 0;
-    font-family: "Poppins", sans-serif;
-  }
   main .discovermore {
-    text-align: left;
-    margin-top: 5.793vh;
-    margin-bottom: 0;
-  }
-  main .discovermore button {
-    font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    padding: 1.506vh 1.822vw 1.506vh 1.822vw;
+    border-radius: 5px;
+    width: 190px;
+    height: 50px;
+    align-self: flex-start;
   }
-  main .whyChooseUs .container {
-    padding: 17.96vh 13.281vw 17.96vh 13.281vw;
+  main .whyChooseUs {
     flex-direction: row-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    height: 659px;
+    gap: 83px;
   }
-  main .needpicture img {
-    width: 672px;
-    height: 426px;
-    margin: 0.521vh 0 0.753vh 4.322vw;
+  main .whyChooseUs .row {
+    width: 656px;
   }
-  main .whyChooseUs h1 {
-    text-align: left;
-    margin: 0;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 61px;
-  }
-  main .whyChooseUs p {
-    text-align: left;
-    margin: 3.476vh 0 5.793vh 0;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
+  main .whyChooseUs .article {
     padding: 0;
   }
+  main .whyChooseUs > img {
+    width: 672px;
+    height: 426px;
+    z-index: 1;
+  }
+  main .whyChooseUs h1 {
+    padding-bottom: 30px;
+    color: #FFFFFF;
+  }
+  main .whyChooseUs h6 {
+    padding: 0;
+    text-align: left;
+    color: #FFFFFF;
+  }
+  main .properTakeCare {
+    justify-content: flex-start;
+    gap: 20px 118px;
+  }
   main .proper {
-    width: calc(50% - 3.0729vw);
-    margin-bottom: 2.317vh;
+    width: 242px;
+    gap: 20px;
   }
-  main .proper:nth-child(1), main .proper:nth-child(3) {
-    margin-right: 6.1458vw;
-  }
-  main .proper:nth-child(3), main .proper:nth-child(4) {
-    margin-bottom: 0;
-  }
-  main .proper a {
-    font-weight: 700;
+  main .proper h5 {
     font-size: 24px;
     line-height: 33px;
   }
   main .tick {
     height: 30px;
     width: 30px;
-    margin-right: 1.041vw;
+    border-radius: 50%;
+  }
+  main .tick img {
+    width: 20px;
+    height: 14.69px;
   }
 }/*# sourceMappingURL=style.css.map */
