@@ -5,46 +5,38 @@
 header * {
   font-family: "Nunito", sans-serif;
 }
-header .header {
+header header {
   display: flex;
   justify-content: center;
-  height: 33.3333vw;
-}
-header .container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 33.3333vw;
-  margin: auto;
+  height: 125px;
 }
 header .row {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-}
-header .col-12 {
-  flex: 0 0 100%;
-  max-width: 100%;
+  height: 125px;
 }
 header .top_navbar {
-  width: 100vw;
-  max-height: 14.6666vw;
   background-color: #0C4B35;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+header .container_top_navbar {
+  width: 335px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5.3333vw 0 5.3333vw;
 }
 header .address_phone {
   display: flex;
   justify-content: space-around;
+  gap: 20px;
 }
 header .address_phone img {
   display: block;
-}
-header .address_phone a {
-  margin-right: 5.3333vw;
 }
 header .address_phone span {
   display: none;
@@ -53,31 +45,39 @@ header .language {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 5px;
 }
 header .language a {
-  font-size: calc(12px + 0.1041666667vw);
+  font-style: normal;
   font-weight: 400;
-  line-height: calc(14px + 0.5729166667vw);
+  font-size: 12px;
+  line-height: 16px;
   text-decoration: none;
   color: #FFFFFF;
+  text-align: center;
 }
-header .language a:first-child {
-  margin-right: 1.333vw;
+header .language img {
+  width: 7px;
+  height: 3.82px;
 }
 header .navbar {
+  background-color: white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+header .container_navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
-  max-height: 18.6666vw;
-  background-color: white;
-  padding: 0 4vw 0 4vw;
+  width: 345px;
 }
 header .call_menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 29.333vw;
+  width: 110px;
 }
 header .call_menu span {
   display: none;
@@ -85,34 +85,50 @@ header .call_menu span {
 header .call_menu > a:first-child {
   background-color: #00730C;
   border-radius: 10px;
-  width: 10.6666vw;
-  height: 9.0666vw;
+  width: 40px;
+  height: 34px;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 header .call_menu > a:first-child img {
-  width: 5.3333vw;
-  height: 5.3333vw;
+  width: 20px;
+  height: 20px;
 }
 header .menu {
   display: none;
 }
 @media (min-width: 1600px) {
-  header .container, header header {
-    height: 16.6859vh;
-    padding: 0;
+  header .row {
+    height: 144px;
   }
   header .top_navbar {
-    height: 6.836vh;
-    max-height: 6.836vh;
-    padding: 17px 13.0729vw 17px 13.0729vw;
+    height: 59px;
+    max-height: 59px;
+    width: 100%;
+    justify-content: center;
+  }
+  header .container_top_navbar {
+    width: 1418px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   header .navbar {
-    height: 9.849vh;
-    max-height: 9.849vh;
-    padding: 15px 13.3333vw 15px 13.3333vw;
+    height: 85px;
+    max-height: 85px;
+    width: 100%;
+    justify-content: center;
+  }
+  header .container_navbar {
+    display: flex;
     justify-content: flex-start;
+    align-items: center;
+    width: 1410px;
+  }
+  header .container_navbar > a img {
+    width: 120px;
+    height: 55px;
   }
   header .address_phone, header .language {
     padding: 0;
@@ -124,28 +140,32 @@ header .menu {
   header .language a {
     padding: 0;
     font-family: "Poppins", sans-serif;
-  }
-  header .language a:first-child {
-    margin-right: 0.52vw;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
   }
   header .language img {
-    width: 0.625vw;
-    height: 0.8111vh;
+    width: 12px;
+    height: 6.84px;
     margin: 0;
+  }
+  header .address_phone {
+    gap: 30px;
   }
   header .address_phone a {
     display: flex;
-    margin-right: 1.562vw;
+    margin-right: 30px;
     align-items: center;
     font-family: "Poppins", sans-serif;
-    font-size: calc(10px + 0.2083333333vw);
+    font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 25px;
+    gap: 10px;
   }
   header .address_phone img {
-    margin-right: 0.52vw;
-    height: 2.8968vh;
-    width: 1.302vw;
+    height: 25px;
+    width: 25px;
   }
   header .call_menu {
     flex-direction: row-reverse;
@@ -156,20 +176,20 @@ header .menu {
     display: flex;
     align-items: center;
     background-color: #00730C;
-    padding: 1.274vh 1.7968vw 1.274vh 1.7968vw;
+    font-style: normal;
     font-weight: 700;
-    font-size: calc(16px + 0.1041666667vw);
-    line-height: calc(20px + 0.2083333333vw);
+    font-size: 18px;
+    line-height: 24px;
     text-decoration: none;
     border-radius: 5px;
-    width: auto;
-    height: 100%;
+    width: 170px;
+    height: 50px;
+    gap: 10px;
   }
   header .call_menu > a:first-child img {
-    width: 1.5625vw;
-    height: 3.4762vh;
+    width: 25px;
+    height: 33px;
     display: block;
-    margin-right: 0.52vw;
   }
   header .call_menu a:nth-child(2) {
     display: none;
@@ -177,34 +197,32 @@ header .menu {
   header .menu {
     display: flex;
     align-items: center;
+    gap: 44px;
   }
   header .menu a {
     text-decoration: none;
+    font-style: normal;
     font-weight: 700;
-    font-size: calc(14px + 0.1041666667vw);
-    line-height: calc(19px + 0.0520833333vw);
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
     color: #212529;
     text-align: center;
     display: flex;
+    gap: 4px;
   }
   header .menu a img:nth-child(2) {
     display: none;
   }
   header .menu li {
-    margin-right: 2.291vw;
     display: flex;
     align-items: center;
   }
   header .menu li:last-child {
-    margin-right: 5.26vw;
+    margin-right: 101px;
   }
   header .menu img {
-    margin-left: 0.26vw;
     align-self: center;
-    padding-right: 0;
-  }
-  header .navbar > a:first-child {
-    margin-right: 20.3125vw;
   }
   header .menu li a:hover {
     color: #00730C;
@@ -216,15 +234,12 @@ header .menu {
     display: inline;
   }
 }
-@media (min-width: 1024px) {
-  header .navbar > a:first-child {
-    margin-right: calc(44px + 588.2 * (100vw - 1024px) / 1920);
+@media (min-width: 768px) and (max-width: 1023px) {
+  header .container_top_navbar {
+    width: 716px;
   }
-  header .menu li {
-    margin-right: calc(13px + 52.7 * (100vw - 1024px) / 1920);
-  }
-  header .menu li:last-child {
-    margin-right: calc(23px + 132.6 * (100vw - 1024px) / 1920);
+  header .container_navbar {
+    width: 720px;
   }
 }
 
@@ -232,7 +247,7 @@ main * {
   font-family: "Nunito", sans-serif;
 }
 main .container {
-  padding: 0 15px 0 15px;
+  width: 345px;
   margin: auto;
   position: relative;
   display: flex;
@@ -251,8 +266,8 @@ main .entryBackground {
   background: url(image/entry_flowerpot.jpg) no-repeat bottom 15px left/83px 118px, linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%) 100vw 719px;
   width: 100vw;
   height: inherit;
-  left: 0;
   right: 0;
+  left: 0;
   position: absolute;
 }
 main .entryImage {
@@ -264,7 +279,7 @@ main .entryImage::after {
   position: absolute;
   top: 0;
   right: 0;
-  left: -15px;
+  left: 0;
   width: 100vw;
   height: 240px;
   background-image: url(image/skillup.jpg);
@@ -575,7 +590,7 @@ main .tick {
     gap: 93px;
   }
   main .entryBackground {
-    background: url(image/entry_flowerpot.jpg) no-repeat bottom 15px left/92px 178px, linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%) 100vw 719px;
+    background: url(image/entry_flowerpot.jpg) no-repeat bottom 60px left/92px 178px, linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%) 100vw 719px;
     width: 100vw;
     height: inherit;
     left: 0;
@@ -864,5 +879,38 @@ main .tick {
   main .tick img {
     width: 20px;
     height: 14.69px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  main .container {
+    padding: 0;
+    width: 720px;
+    position: relative;
+  }
+  main .entry {
+    height: 819px;
+  }
+  main .entryImage {
+    height: 340px;
+  }
+  main .entryImage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 340px;
+    background-image: url(image/skillup.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 340px;
+  }
+  main .entryBackground {
+    background: url(image/entry_flowerpot.jpg) no-repeat bottom 15px left/83px 118px, linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%) 100vw 719px;
+    width: 100vw;
+    height: inherit;
+    right: 0;
+    left: -24px;
+    position: absolute;
   }
 }/*# sourceMappingURL=style.css.map */

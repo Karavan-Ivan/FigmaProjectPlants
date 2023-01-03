@@ -1,46 +1,38 @@
 * {
     font-family: 'Nunito', sans-serif;
 }
-.header {
+header {
     display: flex;
     justify-content: center;
-    height: 33.3333vw;
-}
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 33.3333vw;
-    margin: auto;
+    height: 125px;
 }
 .row {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-}
-.col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
+    height: 125px;
 }
 .top_navbar {
-    width: 100vw;
-    max-height: 14.6666vw;
     background-color: #0C4B35;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.container_top_navbar {
+    width: 335px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5.3333vw 0 5.3333vw;
 }
 .address_phone {
     display: flex;
     justify-content: space-around;
+    gap: 20px;
 }
 .address_phone img {
     display: block;
-}
-.address_phone a {
-    margin-right: 5.3333vw;
 }
 .address_phone span {
     display: none;
@@ -49,31 +41,39 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 5px;
 }
 .language a {
-    font-size: calc(12px + 2 * (100vw / 1920));
+    font-style: normal;
     font-weight: 400;
-    line-height: calc(14px + 11 * (100vw / 1920));
+    font-size: 12px;
+    line-height: 16px;
     text-decoration: none;
     color: #FFFFFF;
+    text-align: center;
 }
-.language a:first-child {
-    margin-right: 1.333vw;
+.language img {
+    width: 7px;
+    height: 3.82px;
 }
 .navbar {
+    background-color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.container_navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    max-height: 18.6666vw;
-    background-color: white;
-    padding: 0 4vw 0 4vw;
+    width: 345px;
 }
 .call_menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 29.333vw;
+    width: 110px;
 }
 .call_menu span {
     display: none;
@@ -81,39 +81,51 @@
 .call_menu > a:first-child {
     background-color: #00730C;
     border-radius: 10px;
-    width: 10.6666vw;
-    height: 9.0666vw;
+    width: 40px;
+    height: 34px;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 .call_menu > a:first-child img {
-    width: 5.3333vw;
-    height: 5.3333vw;
+    width: 20px;
+    height: 20px;
 }
 .menu {
     display: none;
 }
 
-@media (min-width:481px) and (max-width:1023px) {
-
-}
-
 @media (min-width:1600px) {
-    .container, header {
-        height: 16.6859vh;
-        padding: 0;
+    .row {
+        height: 144px;
     }
     .top_navbar {
-        height: 6.836vh;
-        max-height: 6.836vh;
-        padding: 17px 13.0729vw 17px 13.0729vw;
+        height: 59px;
+        max-height: 59px;
+        width: 100%;
+        justify-content: center;
+    }
+    .container_top_navbar {
+        width: 1418px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     .navbar {
-        height: 9.849vh;
-        max-height: 9.849vh;
-        padding: 15px 13.3333vw 15px 13.3333vw;
+        height: 85px;
+        max-height: 85px;
+        width: 100%;
+        justify-content: center;
+    }
+    .container_navbar {
+        display: flex;
         justify-content: flex-start;
+        align-items: center;
+        width: 1410px;
+    }
+    .container_navbar > a img {
+        width: 120px;
+        height: 55px;
     }
     .address_phone, .language {
         padding: 0;
@@ -125,28 +137,32 @@
     .language a {
         padding: 0;
         font-family: 'Poppins', sans-serif;
-    }
-    .language a:first-child {
-        margin-right: 0.52vw;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
     }
     .language img {
-        width: 0.625vw;
-        height: 0.8111vh;
+        width: 12px;
+        height: 6.84px;
         margin: 0;
+    }
+    .address_phone {
+        gap: 30px;
     }
     .address_phone a {
         display: flex;
-        margin-right: 1.562vw;
+        margin-right: 30px;
         align-items: center;
         font-family: 'Poppins', sans-serif;
-        font-size: calc(10px + 4 * (100vw / 1920));
+        font-style: normal;
         font-weight: 400;
-        line-height: 24px;
+        font-size: 14px;
+        line-height: 25px;
+        gap: 10px;
     }
     .address_phone img {
-        margin-right: 0.52vw;
-        height: 2.8968vh;
-        width: 1.302vw;
+        height: 25px;
+        width: 25px;
     }
     .call_menu {
         flex-direction: row-reverse;
@@ -157,20 +173,20 @@
         display: flex;
         align-items: center;
         background-color: #00730C;
-        padding: 1.274vh 1.7968vw 1.274vh 1.7968vw;
+        font-style: normal;
         font-weight: 700;
-        font-size: calc(16px + 2 * (100vw / 1920));
-        line-height: calc(20px + 4 * (100vw / 1920));
+        font-size: 18px;
+        line-height: 24px;
         text-decoration: none;
         border-radius: 5px;
-        width: auto;
-        height: 100%;
+        width: 170px;
+        height: 50px;
+        gap: 10px;
     }
     .call_menu > a:first-child img {
-        width: 1.5625vw;
-        height: 3.4762vh;
+        width: 25px;
+        height: 33px;
         display: block;
-        margin-right: 0.52vw;
     }
     .call_menu a:nth-child(2) {
         display: none;
@@ -178,34 +194,32 @@
     .menu {
         display: flex;
         align-items: center;
+        gap: 44px;
     }
     .menu a {
         text-decoration: none;
+        font-style: normal;
         font-weight: 700;
-        font-size: calc(14px + 2 * (100vw / 1920));
-        line-height: calc(19px + 1 * (100vw / 1920));
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: capitalize;
         color: #212529;
         text-align: center;
         display: flex;
+        gap: 4px;
     }
     .menu a img:nth-child(2) {
         display: none;
     }
     .menu li {
-        margin-right: 2.291vw;
         display: flex;
         align-items: center;
     }
     .menu li:last-child {
-        margin-right: 5.26vw;
+        margin-right: 101px;
     }
     .menu img {
-        margin-left: 0.26vw;
         align-self: center;
-        padding-right: 0;
-    }
-    .navbar > a:first-child {
-        margin-right: 20.3125vw;
     }
     .menu li a:hover {
         color: #00730C;
@@ -218,133 +232,13 @@
     }
 }
 
-@media (min-width:1024px) {
-    .navbar > a:first-child {
-        margin-right: calc(44px + (346 + 346 * 0.7) * ((100vw - 1024px) / 1920));
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container_top_navbar {
+        width: 716px;
     }
-    .menu li {
-        margin-right: calc(13px + (31 + 31 * 0.7) * ((100vw - 1024px) / 1920));
-    }
-    .menu li:last-child {
-        margin-right: calc(23px + (78 + 78 * 0.7) * ((100vw - 1024px) / 1920));
+    .container_navbar {
+        width: 720px;
     }
 }
 
-// @media (min-width:1920px) {
-//     .container, header {
-//         height: 16.6859vh;
-//     }
-//     .top_navbar {
-//         height: 6.836vh;
-//         max-height: 6.836vh;
-//         padding: 1.969vh 13.072vw 1.969vh 13.072vw;
-//     }
-//     .navbar {
-//         height: 9.849vh;
-//         max-height: 9.849vh;
-//         padding: 1.738vh 13.333vw 1.738vh 13.333vw;
-//         justify-content: flex-start;
-//     }
-//     .address_phone, .language {
-//         padding: 0;
-//     }
-//     .address_phone span, .call_menu span {
-//         display: block;
-//         color: #FFFFFF;
-//     }
-//     .language a {
-//         font-weight: 400;
-//         font-size: 14px;
-//         line-height: 25px;
-//         margin-right: 0.52vw;
-//         padding: 0;
-//         font-family: 'Poppins', sans-serif;
-//     }
-//     .language img {
-//         width: 0.625vw;
-//         height: 0.8111vh;
-//         margin: 0;
-//     }
-//     .address_phone a {
-//         display: flex;
-//         margin-right: 1.562vw;
-//         align-items: center;
-//         font-family: 'Poppins', sans-serif;
-//         font-weight: 400;
-//         font-size: 14px;
-//         line-height: 25px;
-//     }
-//     .address_phone img {
-//         margin-right: 0.52vw;
-//         height: 2.8968vh;
-//         width: 1.302vw;
-//     }
-//     .call_menu {
-//         justify-content: flex-end;
-//         flex-direction: row-reverse;
-//         width: 100%;
-//     }
-//     .call_menu > a:first-child {
-//         display: flex;
-//         align-items: center;
-//         background-color: #00730C;
-//         padding: 1.274vh 1.7968vw 1.274vh 1.7968vw;
-//         font-weight: 700;
-//         font-size: 18px;
-//         line-height: 24px;
-//         text-decoration: none;
-//         border-radius: 5px;
-//         width: auto;
-//         height: 100%;
-//     }
-//     .call_menu > a:first-child img {
-//         width: 1.5625vw;
-//         height: 3.4762vh;
-//         display: block;
-//         margin-right: 0.52vw;
-//     }
-//     .call_menu a:nth-child(2) {
-//         display: none;
-//     }
-//     .menu {
-//         display: flex;
-//         align-items: center;
-//     }
-//     .menu a {
-//         text-decoration: none;
-//         font-weight: 700;
-//         font-size: 16px;
-//         line-height: 20px;
-//         color: #212529;
-//         text-align: center;
-//         display: flex;
-//     }
-//     .menu a img:nth-child(2) {
-//         display: none;
-//     }
-//     .menu li {
-//         margin-right: 2.291vw;
-//         display: flex;
-//         align-items: center;
-//     }
-//     .menu li:last-child {
-//         margin-right: 5.26vw;
-//     }
-//     .menu img {
-//         margin-left: 0.26vw;
-//         align-self: center;
-//         padding-right: 0;
-//     }
-//     .navbar > a:first-child {
-//         margin-right: 20.3125vw;
-//     }
-//     .menu li a:hover {
-//         color: #00730C;
-//     }
-//     .menu li:hover a img:first-child {
-//         display: none;
-//     }
-//     .menu li:hover a img:nth-child(2){
-//         display: inline;
-//     }
-// }
+

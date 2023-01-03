@@ -2,7 +2,7 @@
     font-family: 'Nunito', sans-serif;
 }
 .container {
-    padding: 0 15px 0 15px;
+    width: 345px;
     margin: auto;
     position: relative;
     display: flex;
@@ -21,8 +21,8 @@
     background: url(image/entry_flowerpot.jpg) no-repeat bottom 15px left / 83px 118px, linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%) 100vw 719px;
     width: 100vw;
     height: inherit;
-    left: 0;
     right: 0;
+    left: 0;
     position: absolute;
 }
 .entryImage {
@@ -34,7 +34,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    left: -15px;
+    left: 0;
     width: 100vw;
     height: 240px;
     background-image: url(image/skillup.jpg);
@@ -346,7 +346,7 @@ span {
         gap: 93px;
     }
     .entryBackground {
-        background: url(image/entry_flowerpot.jpg) no-repeat bottom 15px left / 92px 178px, linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%) 100vw 719px;
+        background: url(image/entry_flowerpot.jpg) no-repeat bottom 60px left / 92px 178px, linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%) 100vw 719px;
         width: 100vw;
         height: inherit;
         left: 0;
@@ -639,3 +639,36 @@ span {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 0;
+        width: 720px;
+        position: relative;
+    }
+    .entry {
+        height: 819px;
+    }
+    .entryImage {
+        height: 340px;
+    }
+    .entryImage::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        height: 340px;
+        background-image: url(image/skillup.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vw 340px;
+    }
+    .entryBackground {
+        background: url(image/entry_flowerpot.jpg) no-repeat bottom 15px left / 83px 118px, linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%) 100vw 719px;
+        width: 100vw;
+        height: inherit;
+        right: 0;
+        left: -24px;
+        position: absolute;
+    }
+}
