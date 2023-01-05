@@ -2,13 +2,14 @@
     font-family: 'Nunito', sans-serif;
 }
 .container {
-    width: 345px;
+    width: 100%;
     margin: auto;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
+    padding: 0 15px 0 15px;
 }
 .entry {
     width: 100%;
@@ -34,7 +35,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    left: 0;
+    left: -15px;
     width: 100vw;
     height: 240px;
     background-image: url(image/skillup.jpg);
@@ -330,11 +331,985 @@ span {
     justify-content: center;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        padding: 0;
+        width: 720px;
+        position: relative;
+    }
+    .entry {
+        height: 819px;
+    }
+    .entryImage {
+        height: 340px;
+    }
+    .entryImage::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: calc(360px - 50vw);
+        width: 100vw;
+        height: 340px;
+        background-image: url(image/skillup.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vw 340px;
+    }
+    .entryBackground {
+        background: url(image/entry_flowerpot.jpg) no-repeat bottom 15px left / 83px 118px, linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%) 100vw 719px;
+        width: 100vw;
+        height: inherit;
+        right: 0;
+        left: calc(360px - 50vw);
+        position: absolute;
+    }
+    .firstline {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding-bottom: 15px;
+    }
+    .firstline h6 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        color: #212529;
+    }
+    .secondline {
+        padding-bottom: 20px;
+    }
+    .secondline h1 {
+        font-size: 35px;
+        line-height: 49px;
+    }
+    .thirdline {
+        padding-bottom: 45px;
+    }
+    .thirdline h6 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .button_fouthline1920 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        gap: 20.3px;
+        padding-bottom: 41.3px;
+    }
+    .button_fouthline1920 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-self: flex-start;
+        gap: 15px;
+        padding-bottom: 41px;
+    }
+    .buttonGetAQuate button {
+        background-color: #00730C;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 21px;
+        padding: 12px 25px;
+    }
+    .seeHowItWorks {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 8px;
+    }
+    .seeHowItWorks h6 {
+        color: #00730C;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .fifthline {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        align-self: flex-end;
+        gap: 7px;
+    }
+    .fifthline button {
+        border-radius: 32px;
+        background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
+        border: none;
+        padding: 10px 12px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        color: #212529;
+        gap: 12px;
+    }
+    .fifthline span {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        color: #212529;
+    }
+    .fifthline button:last-child {
+        display: flex;
+    }
+    .article h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 45px;
+        color: #212529; 
+        text-align: center;
+        padding: 0 0 15px 0;
+    }
+    .article h6 {
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #676767;
+    }
+    .serviceAll {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .service {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 345px;
+        height: 366px;
+        box-shadow: none;
+        border-radius: 10px;
+        gap: 30px;
+    }
+    .serviceInfo {
+        display: flex;
+        flex-direction: column;
+    }
+    .serviceInfo h5 {
+        font-size: 19px;
+        line-height: 27px;
+        text-align: center;
+    }
+    .serviceInfo h6 {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        width: 243px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .service img {
+        width: 70px;
+        height: 70px;
+    }
+    .aboutcompanyImage img{
+        height: 100%;
+        width: 100%;
+    }
+    .aboutcompany .row {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        position: relative;
+    }
+    .aboutcompany .article {
+        padding: 0;
+        width: 350px;
+    }
+    .aboutcompany .article h1 {
+        text-align: left;
+        padding-bottom: 20px;
+    }
+    .aboutcompany .article h6 {
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .servicesAboutCompany {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        align-items: flex-start;
+        max-width: 340px;
+        max-height: 450px;
+    }
+    .serviceAboutCompany {
+        width: 160px;
+        height: 175px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFFFFF;
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        border-radius: 5px;
+        gap: 10px;
+        padding: 0;
+    }
+    .serviceAboutCompany h5 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        color: #212529;
+    }
+    .serviceAboutCompany img {
+        width: 50px;
+        height: 50px;
+    }
+    .aboutcompany .discovermore {
+        background-color: #00730C;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 22px;
+        border-radius: 5px;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        width: 167px;
+        height: 60px;
+        align-self: flex-end;
+        justify-self: center;
+        position: absolute;
+        left: 65%;
+        right: 50%;
+    }
+    .whyChooseUs {
+        height: 784px;
+    }
+    .whyChooseUsBackground {
+        position: absolute;
+        background: #0C4B35;
+        left: calc(360px - 50vw);
+        right: 0;
+        width: 100vw;
+        height: inherit;
+    }
+    .whyChooseUs .article {
+        padding: 0;
+        max-width: 500px;
+        align-self: center;
+    }
+    .whyChooseUs > img {
+        width: 720px;
+        height: 317px;
+        z-index: 1;
+    } 
+    .whyChooseUs .row {
+        z-index: 1;
+    }
+    .whyChooseUs h1 {
+        color: #FFFFFF;
+    }
+    .whyChooseUs h6 {
+        color: #FFFFFF;
+        padding: 0 0 10px 0;
+    }
+    .properTakeCare {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 34px;
+    }
+    .proper {
+        display: flex;
+        flex-direction: column;
+        width: 154.5px;
+        align-items: center;
+        gap: 10px;
+    }
+    .proper h5 {
+        text-align: left;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+        color: #FFFFFF;
+        text-transform: capitalize;
+    }
+    .tick {
+        height: 30px;
+        width: 30px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tick img {
+        width: 20px;
+        height: 14.69px;
+    }
+    .whyChooseUs .discovermore {
+        background-color: #00730C;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 22px;
+        border-radius: 5px;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        width: 267px;
+        height: 60px;
+        align-self: center;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .container {
+        padding: 0;
+        width: 970px;
+    }
+    .row {
+        gap: 40px;
+    }
+    .entry {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 53px;
+        height: 559px;
+    }
+    .entryBackground {
+        background: url(image/entry_flowerpot.jpg) no-repeat bottom 30px left / 117px 208px, linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%) 100vw 719px;
+        width: 100vw;
+        height: inherit;
+        left: calc(485px - 50vw);
+        right: 0;
+        position: absolute;
+    }
+    .entryImage {
+        height: 513px;
+        position: relative;
+    }
+    .entryImage::after {
+        content: "";
+        position: absolute;
+        top: 46px;
+        right: 0;
+        left: 0;
+        width: calc(50vw - 68px);
+        height: 513px;
+        background-image: url(image/skillup.jpg);
+        background-repeat: no-repeat;
+        background-size: calc(50vw - 68px) 513px;
+    }
+    .entry .row {
+        justify-content: center;
+        width: 500px;
+        align-items: flex-end;
+    }
+    .entryInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-top: 25px;
+        width: 400px;
+    }
+    .firstline {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 0;
+    }
+    .firstline h6 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #212529;
+    }
+    .secondline {
+        padding: 0;
+    }
+    .secondline h5 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 46px;
+        color: #212529; 
+        text-align: left;
+    }
+    .thirdline {
+        padding-bottom: 25px;
+    }
+    .thirdline h6 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 26px;
+        color: #676767;
+    }
+    .button_fouthline1920 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-self: flex-start;
+        gap: 20px;
+        padding-bottom: 33px;
+    }
+    .buttonGetAQuate button {
+        background-color: #00730C;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 22px;
+        padding: 11px 28px;
+    }
+    .seeHowItWorks {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .seeHowItWorks h6 {
+        color: #00730C;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .fifthline {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        align-self: flex-start;
+    }
+    .fifthline button {
+        border: none;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        color: #212529;
+        gap: 5px;
+        background: none;
+    }
+    .fifthline span {
+        border-radius: 35px;
+        background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: #212529;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 13px 5px;
+        width: 30px;
+        height: 30px;
+    }
+    .fifthline:last-child button {
+        display: flex;
+    }
+    .article h1 {
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 48px;
+        color: #212529; 
+    }
+    .article h6 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #676767;
+    }
+    .serviceAll {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .service {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 227.5px;
+        height: 266px;
+        box-shadow: none;
+        border-radius: 10px;
+        gap: 30px;
+    }
+    .serviceInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .serviceInfo h5 {
+        font-size: 23px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .serviceInfo h6 {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        width: 183px;
+        font-family: 'Poppins', sans-serif;
+        align-self: center;
+    }
+    .service img {
+        width: 50px;
+        height: 50px;
+    }
+    .aboutcompany {
+        display: flex;
+        gap: 15px;
+    }
+    .aboutcompanyImage img{
+        width: 356px;
+        height: 603px;
+    }
+    .aboutcompany .article {
+        padding: 0;
+    }
+    .aboutcompany .article h1 {
+        text-align: left;
+        padding-bottom: 20px;
+    }
+    .aboutcompany .article h6 {
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        width: 100%;
+    }
+    .servicesAboutCompany {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 20px 30px;
+    }
+    .serviceAboutCompany {
+        width: 227.5px;
+        height: 77px;
+        flex-direction: row;
+        box-shadow: none;
+        gap: 20px;
+        padding: 0;
+    }
+    .serviceAboutCompany h5 {
+        font-size: 20px;
+        line-height: 25px;
+        text-align: left;
+    }
+    .serviceAboutCompany img {
+        width: 47px;
+        height: 47px;
+    }
+    .discovermore {
+        font-size: 17px;
+        line-height: 22px;
+        border-radius: 5px;
+        width: 140px;
+        height: 40px;
+        align-self: flex-start;
+    }
+    .whyChooseUs {
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 559px;
+        gap: 35px;
+    }
+    .whyChooseUsBackground {
+        left: calc(485px - 50vw);
+        width: 100vw;
+    }
+    .whyChooseUs .row {
+        width: 450px;
+    }
+    .whyChooseUs .article {
+        padding: 0;
+    }
+    .whyChooseUs > img {
+        width: 400px;
+        height: 326px;
+        z-index: 1;
+    } 
+    .whyChooseUs h1 {
+        padding-bottom: 20px;
+        color: #FFFFFF;
+    }
+    .whyChooseUs h6 {
+        padding: 0;
+        text-align: left;
+        color: #FFFFFF;
+    }
+    .properTakeCare {
+        justify-content: flex-start;
+        gap: 15px 20px;
+    }
+    .proper {
+        width: 215px;
+        gap: 10px;
+    }
+    .proper h5 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .tick {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+    }
+    .tick img {
+        width: 18px;
+        height: 13.69px;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .container {
+        padding: 0;
+        width: 1170px;
+    }
+    .row {
+        gap: 40px;
+    }
+    .entry {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 63px;
+        height: 559px;
+    }
+    .entryBackground {
+        background: url(image/entry_flowerpot.jpg) no-repeat bottom 30px left / 117px 208px, linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%) 100vw 719px;
+        width: 100vw;
+        height: inherit;
+        left: calc(585px - 50vw);
+        right: 0;
+        position: absolute;
+    }
+    .entryImage {
+        height: 513px;
+        position: relative;
+        justify-content: flex-end;
+        width: auto;
+    }
+    .entryImage::after {
+        content: "";
+        position: absolute;
+        top: 46px;
+        right: 0;
+        left: 0;
+        // 100vw - 550 - 63 - (50vw - 585);
+        width: calc(50vw - 28px); 
+        height: 513px;
+        background-image: url(image/skillup.jpg);
+        background-repeat: no-repeat;
+        background-size: calc(50vw - 118px) 513px;
+    }
+    .entry .row {
+        justify-content: center;
+        width: 550px;
+        align-items: flex-end;
+    }
+    .entryInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-top: 25px;
+        width: 420px;
+    }
+    .firstline {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 0;
+    }
+    .firstline h6 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #212529;
+    }
+    .secondline {
+        padding: 0;
+    }
+    .secondline h5 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 58px;
+        color: #212529; 
+        text-align: left;
+    }
+    .thirdline {
+        padding-bottom: 25px;
+    }
+    .thirdline h6 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #676767;
+    }
+    .button_fouthline1920 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-self: flex-start;
+        gap: 20px;
+        padding-bottom: 38px;
+    }
+    .buttonGetAQuate button {
+        background-color: #00730C;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 12px 30px;
+    }
+    .seeHowItWorks {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .seeHowItWorks h6 {
+        color: #00730C;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .fifthline {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        align-self: flex-start;
+    }
+    .fifthline button {
+        border: none;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        color: #212529;
+        gap: 6px;
+        background: none;
+    }
+    .fifthline span {
+        border-radius: 35px;
+        background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 19px;
+        color: #212529;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 6px;
+        width: 40px;
+        height: 40px;
+    }
+    .fifthline:last-child button {
+        display: flex;
+    }
+    .article h1 {
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 45px;
+        color: #212529; 
+    }
+    .article h6 {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 28px;
+        color: #676767;
+    }
+    .serviceAll {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .service {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 273.75px;
+        height: 316px;
+        box-shadow: none;
+        border-radius: 10px;
+        gap: 40px;
+    }
+    .serviceInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .serviceInfo h5 {
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+    }
+    .serviceInfo h6 {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        width: 203px;
+        font-family: 'Poppins', sans-serif;
+        align-self: center;
+    }
+    .service img {
+        width: 60px;
+        height: 60px;
+    }
+    .aboutcompany {
+        display: flex;
+        gap: 18px;
+    }
+    .aboutcompanyImage img{
+        width: 656px;
+        height: 603px;
+    }
+    .aboutcompany .article {
+        padding: 0;
+    }
+    .aboutcompany .article h1 {
+        text-align: left;
+        padding-bottom: 20px;
+    }
+    .aboutcompany .article h6 {
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        width: 100%;
+    }
+    .servicesAboutCompany {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 25px 25px;
+    }
+    .serviceAboutCompany {
+        width: 235.5px;
+        height: 87px;
+        flex-direction: row;
+        box-shadow: none;
+        gap: 20px;
+        padding: 0;
+    }
+    .serviceAboutCompany h5 {
+        font-size: 22px;
+        line-height: 28px;
+        text-align: left;
+    }
+    .serviceAboutCompany img {
+        width: 57px;
+        height: 57px;
+    }
+    .discovermore {
+        font-size: 18px;
+        line-height: 23px;
+        border-radius: 5px;
+        width: 170px;
+        height: 45px;
+        align-self: flex-start;
+    }
+    .whyChooseUs {
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 559px;
+        gap: 35px;
+    }
+    .whyChooseUsBackground {
+        left: calc(585px - 50vw);
+        width: 100vw;
+    }
+    .whyChooseUs .row {
+        width: 500px;
+    }
+    .whyChooseUs .article {
+        padding: 0;
+    }
+    .whyChooseUs > img {
+        width: 550px;
+        height: 426px;
+        z-index: 1;
+    } 
+    .whyChooseUs h1 {
+        padding-bottom: 20px;
+        color: #FFFFFF;
+    }
+    .whyChooseUs h6 {
+        padding: 0;
+        text-align: left;
+        color: #FFFFFF;
+    }
+    .properTakeCare {
+        justify-content: flex-start;
+        gap: 20px 70px;
+    }
+    .proper {
+        width: 215px;
+        gap: 20px;
+    }
+    .proper h5 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .tick {
+        height: 28px;
+        width: 28px;
+        border-radius: 50%;
+    }
+    .tick img {
+        width: 19px;
+        height: 13.69px;
+    }
+}
+
+
 @media (min-width: 1600px) {
     .container {
         padding: 0;
         width: 1410px;
-        position: static;
     }
     .row {
         gap: 50px;
@@ -349,7 +1324,7 @@ span {
         background: url(image/entry_flowerpot.jpg) no-repeat bottom 60px left / 92px 178px, linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%) 100vw 719px;
         width: 100vw;
         height: inherit;
-        left: 0;
+        left: calc(705px - 50vw);
         right: 0;
         position: absolute;
     }
@@ -396,7 +1371,7 @@ span {
     .secondline {
         padding: 0;
     }
-    .secondline h1 {
+    .secondline h5 {
         font-style: normal;
         font-weight: 800;
         font-size: 58px;
@@ -596,6 +1571,9 @@ span {
         height: 659px;
         gap: 83px;
     }
+    .whyChooseUsBackground {
+        left: calc(705px - 50vw);
+    }
     .whyChooseUs .row {
         width: 656px;
     }
@@ -639,36 +1617,3 @@ span {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    .container {
-        padding: 0;
-        width: 720px;
-        position: relative;
-    }
-    .entry {
-        height: 819px;
-    }
-    .entryImage {
-        height: 340px;
-    }
-    .entryImage::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        width: 100vw;
-        height: 340px;
-        background-image: url(image/skillup.jpg);
-        background-repeat: no-repeat;
-        background-size: 100vw 340px;
-    }
-    .entryBackground {
-        background: url(image/entry_flowerpot.jpg) no-repeat bottom 15px left / 83px 118px, linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%) 100vw 719px;
-        width: 100vw;
-        height: inherit;
-        right: 0;
-        left: -24px;
-        position: absolute;
-    }
-}
