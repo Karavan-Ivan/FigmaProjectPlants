@@ -330,6 +330,344 @@ span {
     align-items: center;
     justify-content: center;
 }
+.workingProcess {
+    display: flex;
+}
+.processCards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.processCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    max-height: 208px;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    border-radius: 10px;
+    background: url(image/processBackgroung.jpg) no-repeat top 68.14px right 31px / 111.89px 76.23px ,#FFFFFF;
+    padding: 20px;
+}
+.processImage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+.processImage img {
+    width: 50px;
+    height: 50px;
+}
+.processImage h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+    color: #E3E3E3;
+}
+.processInfo h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #212529;
+    padding-bottom: 10px;
+}
+.processInfo h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #676767;
+}
+.lawnServices {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(image/lawnServices.jpg);
+    background-size: 100% inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 224px;
+    width: 100%;
+}
+.lawnServices h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 272px;
+}
+.lawnServices button {
+    gap: 10px;
+    padding: 0;
+    display: flex;
+    width: 137px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    border-radius: 5px;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #00730C;
+    text-align: center;
+}
+.lawnServices button img {
+    width: 20px;
+    height: 17.58px;
+}
+.staff {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.wrapper {
+    height: 343px; 
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.slider {
+	height: 343px;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+    align-self: center;
+}
+.wrapper > input {
+	display: none;
+}
+.slides {
+	position: absolute;
+	width: inherit;
+}
+.slide1, .slide2, .slide3, .slide4 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.slide1 {
+    background-image: url(image/staff1.jpg);
+    background-repeat: no-repeat;
+    background-size: inherit;
+}
+.slide2 {
+    background-image: url(image/staff2.jpg);
+    background-repeat: no-repeat;
+    background-size: inherit;
+}
+.slide3 {
+    background-image: url(image/staff3.jpg);
+    background-repeat: no-repeat;
+    background-size: inherit;
+}
+.slide4 {
+    background-image: url(image/staff4.jpg);
+    background-repeat: no-repeat;
+    background-size: inherit;
+}
+.staffInfo {
+    background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0) 264.79%);
+    border-radius: 5px;
+    width: 100%;
+    height: 62px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.staffInfo h4 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.staffInfo h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.staff .controls {
+    height: 10px;
+    width: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+}
+.staff label {
+    cursor: pointer;
+	display: inline-block;
+	height: 6px;
+	position: relative;
+	width: 30px;
+    transition: ease-in-out .5s;
+    border-radius: 8px;
+}
+.staff label:after {
+    border: 2px solid #00730C;
+    border-radius: 8px;
+	content: " ";
+	display: block;
+	height: 2px;
+	width: 26px;
+}
+.staff label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4) {
+	background: #00730C;
+}
+.slides {
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+    transform: scale(0.5);
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4 {
+	opacity: 1;
+	z-index: 0;
+	transform: scale(1);
+}
+.clientsSayingBackground {
+    position: absolute;
+    background: #E6F6EA;
+    box-shadow: inset 77.4px -77.4px 77.4px rgba(175, 187, 178, 0.099), inset -77.4px 77.4px 77.4px rgba(255, 255, 255, 0.099);
+    backdrop-filter: blur(36.378px);
+    height: 585px;
+    width: 100vw;
+    left: 0;
+    right: 0;
+}
+.clientsSaying .article {
+    z-index: 1;
+    padding: 50px 0 40px 0;
+}
+.comments {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background: #FFFFFF;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+}
+.comments img {
+    width: 135px;
+    height: 185px;
+    padding-bottom: 43px;
+}
+.comments h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #676767;
+}
+.worker {
+    padding-top: 15px;
+    display: flex;
+    gap: 104px;
+    align-items: center;
+}
+.workerInfo h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #212529;
+}
+.workerInfo h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #676767;
+}
+.workerRating {
+    display: flex;
+    gap: 13.87px;
+}
+.workerRating img {
+    width: 16px;
+    height: 15px;
+    padding: 0;
+}
+.askedQuestions .article {
+    padding-bottom: 12px;
+}
+.listOfQuetions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.quetions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.quetion {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px 0 20px;
+    width: 100%;
+    height: 44px;
+    background-color: #FFF8F1;
+}
+.quetion h6 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #212529;
+}
+.quetion img {
+    width: 16px;
+    height: 16px;
+}
+.answer {
+    padding: 0 16px 0 16px;
+}
+.answer h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #676767;
+}
+.insightsArticles .row {
+    gap: 40px;
+}
+
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
